@@ -1,0 +1,498 @@
+@media(max-width: 1366px){
+    .uni-group-collapse .float_right{
+        float: none;
+    }
+    #feature-guide-button:checked + label + #feature-guide{
+        width: 80%;
+    }
+    #feature-guide-button:checked + label .close{
+        right: 8%;
+    }
+    #popup_course_info .modal-dialog{
+        width: 55%;
+    }
+    #educational_bg_form .form-card .singleselect{
+        width: 100%;
+    }
+    #smart_popup_bg input.previous, #smart_popup_bg input.next,  #smart_popup_bg input.previous_login, #smart_popup_bg input.next{
+        width: 42%;
+    }
+    #popup_contact_info .modalBody{
+        width: 75%;
+    }
+    #popup_contact_info input.previous, #popup_contact_info input.next{
+        width: 38%;
+        margin: 0;
+    }
+    .about_uni_title:after{
+        width: 70%;
+    }
+    .multiselect-native-select .btn-group{
+        width: 100% !important;
+    }
+    .filter-multiselect-subjects .btn-group{
+        width: 80% !important;
+    }
+}
+@media(max-width: 1200px){
+    .uni-group-collapse .float_right{
+        float: none;
+    }
+    .nav-pills>li{
+        width: 49.6%;
+    }
+    #testimonials .stu_text{
+        width: 60%;
+    }
+    #testimonials .carousel-control.left{
+        left: 120px;
+    }
+    #testimonials .carousel-control.right{
+        right: 100px;
+    }
+}
+@media(max-width: 992px){
+    /*feature tour*/
+    #feature-guide li{
+        width: 45%;
+    }
+    /* menu button */
+    .menuBtn {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        z-index: 101;
+    }
+    .menuBtn > span {
+        background-color: #000;
+        border-radius: 1px;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -1px 0 0 -15px;
+        transition: height 100ms;
+    }
+    .menuBtn > span:after,
+    .menuBtn > span:before {
+        content: '';
+        background-color: #000;
+        border-radius: 1px;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        margin-left: -15px;
+        transition: all 200ms;
+    }
+    .menuBtn > span:after {
+        top: -7px;
+    }
+    .menuBtn > span:before {
+        bottom: -7px;
+    }
+    .menuBtn.act > span {
+        height: 0;
+    }
+    .menuBtn.act > span:after,
+    .menuBtn.act > span:before {
+        background-color: #000;
+        top: 1px;
+    }
+    .menuBtn.act > span:after {
+        transform: rotate(45deg);
+    }
+    .menuBtn.act > span:before {
+        transform: rotate(-45deg);
+    }
+    /* main menu block */
+    header ul.main-menu-right{
+        float: none;
+    }
+    .mainMenu {
+        background-color: #fff;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        height: 100%;
+        width: 100%;
+        display: table;
+        text-align: center;
+        opacity: 0;
+        transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transform: scale(0);
+    }
+    .mainMenu.act {
+        opacity: 1;
+        transform: scale(1);
+    }
+    .mainMenu.act ul li {
+        opacity: 1;
+        transform: translateX(0);
+        display: block;
+        margin: 0 50px;
+    }
+    .mainMenu ul {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .mainMenu li {
+        padding: 8px 0;
+        transition: all 400ms 510ms;
+        opacity: 0;
+    }
+    .mainMenu li:nth-child(odd) {
+        transform: translateX(30%);
+    }
+    .mainMenu li:nth-child(even) {
+        transform: translateX(-30%);
+    }
+    .mainMenu li:last-child {
+        transform: none;
+    }
+    .mainMenu a {
+        color: #000;
+        display: inline-block;
+        font-size: 18px;
+    }
+    #form_course_finding fieldset{
+        width: 80%;
+    }
+    .singleselect{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .contact_type{
+        display: inline-block !important;
+    }
+    #form_course_finding .form-card .action-button{
+        margin: 20px 0 0 0;
+        width: 90%;
+    }
+    .courses_container .course_info_block{
+        overflow-y: hidden;
+        height: auto;
+    }
+    .filter-multiselect-subjects .btn-group{
+        width: 80% !important;
+    }
+    /*popup*/
+    .modal-dialog, #popup_all_uni_visiting .modal-body, #popup_uni_visiting .modal-body, #popup_login_input .modal-title, #smart_popup_bg .modal-title, #popup_contact_info .modal-title, #popup_all_uni_visiting .modal-title, #popup_uni_visiting .modal-title{
+        width: 90%;
+    }
+    .modal-dialog{
+        margin: 20px auto;
+    }
+    #popup_login_input .modal-title, #smart_popup_bg .modal-title, #popup_contact_info .modal-title, #popup_all_uni_visiting .modal-title, #popup_uni_visiting .modal-title{
+        font-size: 30px;
+    }
+    #popup_course_info .modal-dialog{
+        width: 85%;
+    }
+    #popup_all_uni_visiting input.next, #popup_uni_visiting input.next{
+        margin-left: 0;
+    }
+    #popup_login_input .modal-body, #popup_contact_info .modalBody{
+        width: 90%;
+    }
+    #popup_login_input input, #popup_contact_info input{
+        width: 100%;
+    }
+    #popup_login_input input.back, #popup_contact_info input.previous{
+        width: 40%;
+        margin: 0 35px 0 0;
+    }
+    #popup_login_input input.next, #popup_contact_info input.next, #popup_login_input input.send, #popup_contact_info input.next, #popup_all_uni_visiting input.next, #popup_uni_visiting input.next{
+        width: 40%;
+        margin: 0 0 0 35px;
+    }
+    #popup_contact_info .modalBody .singleselect:nth-last-child(2), #popup_contact_info .modalBody .singleselect:last-child{
+        display: inline-block;
+    }
+    /*detail page*/
+    .detail_right_panel{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .detail_left_panel{
+        padding-bottom: 55px;
+        margin-bottom: 0;
+    }
+    .pagination{
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 768px){
+    .banner_text{
+        width: 100%;
+        padding-left: 20px;
+    }
+    #feature-guide li{
+        display: block;
+        width: 100%;
+    }
+    /*.multiselect-native-select .btn-group .multiselect-selected-text{
+        width: 65%
+    }*/
+    /*.multiselect i.fa-chevron-down{
+        width: auto;
+        padding-left: 30px;
+    }*/
+    .uni_accept_chance{
+        float: left;
+    }
+    .uni_visiting_collapse .school-title, #popup_login .modal-title{
+        width: 85%;
+    }
+    #popup_all_uni_visiting input.next, #popup_uni_visiting input.next{
+        width: 90%
+    }
+    #educational_bg_form fieldset{
+        width: 90%;
+    }
+    #educational_bg_form .form-card div .singleselect{
+        width: 60%;
+    }
+    #smart_popup_bg .ed_score{
+        width: 15%;
+    }
+    #educational_bg_form .form-card div p{
+        width: 75%;
+    }
+    #popup_login_input .modal-content, #smart_popup_bg .modal-content, #popup_contact_info .modal-content{
+        height: auto;
+    }
+    #popup_contact_info .modalBody .singleselect:nth-last-child(2), #popup_contact_info .modalBody .singleselect:last-child{
+        display: block;
+        width: 100%;
+    }
+    .detail_left_panel{
+        padding-bottom: 105px;
+    }
+    .detail_text .box-shadow{
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+    #apply_btn{
+        float: none;
+        position: fixed;
+        top: auto;
+        bottom: 35px;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        width: 100%;
+        margin: 0;
+    }
+    #apply_btn button{
+        width: 100%;
+        box-shadow: none;
+    }
+    .about_uni_title{
+        margin: 25px 0 5px 0;
+    }
+    /*detail mobile collapse*/
+    .mobile_collapsible{
+        background-color: white;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        border-bottom: 1px #ccc solid;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+    .mobile_collapsible.active, .mobile_collapsible:hover{
+        background-color: #eee;
+    }
+    .mobile_collapsible:after{
+        content: '\002B';
+        color: black;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+    .mobile_collapsible.active:after{
+        content: "\2212";
+    }
+    .mobile_collapsible_content{
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f4f4f9;
+    }
+    .mobile_collapsible.active ~ .mobile_collapsible_content{
+        padding: 20px;
+    }
+}
+@media(max-width: 480px){
+    header .logo{
+        width: 70%;
+    }
+    .uni-group-collapse .school-rank{
+        padding: 5px 0;
+        display: block;
+    }
+    .uni-group-collapse .logo{
+        width: 100%;
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+    .uni-group-collapse .school-title{
+        border-right: 0;
+        font-size: 110%;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .uni-group-collapse .uni-visit-us{
+        margin-left: 0;
+    }
+    .singleselect:after{
+        width: 28%;
+    }
+    .selector, .multiselect-native-select .btn-group .multiselect-selected-text{
+        font-size: 100%;
+    }
+    .multiselect-native-select .btn-group .multiselect-selected-text{
+        width: 72%;
+        padding-left: 10px;
+    }
+    .multiselect i.fa-chevron-down{
+        width: 25%;
+    }
+    .qualification_option ul li{
+        display: block;
+        width: 100%;
+    }
+    /*for chrome*/
+    .modal-open .modal{
+        padding-right: 0 !important;
+    }
+    
+    #popup_course_info .modal-dialog{
+        width: 90%;
+        margin: 60px auto;
+    }
+    #popup_login_input .modal-title, #smart_popup_bg .modal-title, #popup_contact_info .modal-title, #popup_all_uni_visiting .modal-title, #popup_uni_visiting .modal-title{
+        font-size: 25px;
+    }
+    .uni_visiting_collapse .school-title{
+        width: 80%;
+    }
+    #popup_course_info .popup_course_detail{
+        display: block;
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px #000 solid;
+        padding-bottom: 10px;
+    }
+    #popup_course_info .popup_course_accept_chance{
+        display: block;
+        width: 100%;
+        padding-top: 10px;
+    }
+    #popup_course_info input.more, #popup_course_info input.apply{
+        margin: 5px 0;
+        width: 90%;
+    }
+    .compare_courses_btn{
+        float: none;
+        margin-top: 45px;
+        text-align: center;
+    }
+    .uni-visit-us{
+        margin-left: 0;
+    }
+    #popup_login .modal-title{
+        font-size: 25px;
+        width: 90%;
+    }
+    #popup_login .modal-body img{
+        margin-bottom: 10px;
+    }
+    #popup_course_comparison .modal-body{
+        height: 450px;
+    }
+    #popup_login .modal-footer .next, #popup_login .modal-footer .next_step, #popup_login .modal-footer .done{
+        width: 90%;
+        margin: 5px 0;
+    }
+    #popup_login_input input.back, #popup_contact_info input.previous, #popup_login_input input.next, #popup_contact_info input.next, #popup_login_input input.send, #smart_popup_bg input.next, #popup_contact_info input.next, #popup_all_uni_visiting input.next, #popup_uni_visiting input.next, #smart_popup_bg input.previous_login{
+        width: 100%;
+        margin: 5px auto;
+    }
+    #smart_popup_bg input.previous, #smart_popup_bg input.next{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #smart_popup_bg input.next{
+        margin-top: 10px;
+    }
+    #educational_bg_form .form-card div .singleselect{
+        width: 100%;
+    }
+    #smart_popup_bg .ed_score{
+        width: 100%;
+    }
+    #educational_bg_form .form-card div p{
+        width: 100%;
+        padding-top: 15px;
+    }
+    .contact_type{
+        width: 100% !important;
+    }
+    #date_select #prefer_date{
+        margin: 0 auto 10px auto;
+    }
+    #time_select #prefer_time{
+        margin-bottom: 10px;
+    }
+    .other_option_block, #social_app_id, #date_select, #time_select{
+        display: block;
+        width: 100%;
+    }
+    .about_uni_title:after{
+        width: 40%;
+    }
+    .course_interest{
+        display: none;
+    }
+    .detail_course_title{
+        text-align: center;
+    }
+    .detail_course_title .uni_course_name{
+        margin: 10px 0;
+    }
+    .detail_course_title .email_to_friend{
+        text-align: center;
+    }
+    .detail_text .course_like_select .selector{
+        padding: 5px 60px 5px 10px;
+    }
+    .school_video{
+        height: 200px;
+    }
+    .detail_left_panel .float_left, .detail_left_panel .float_right{
+        float: none;
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+    .detail_left_panel .chart_data_button{
+        float: none;
+        display: inline-block;
+        width: 49%;
+    }
+}

@@ -1,0 +1,872 @@
+body {
+    background: #0b0b0b;
+    padding-top: 1%;
+    font-family: Microsoft JhengHei;
+}
+img{
+    max-width: 80%;
+    height: 90px;
+    vertical-align: middle;
+}
+.outer-template-div {
+    max-width: 98%;
+    margin: 0 auto;
+    min-height: 100%;
+    border-radius: 3%;
+    background: white;
+    clear: both;
+    padding-bottom: 1.5%;
+}
+footer{
+    background: white;
+    text-align: center;
+    color: black;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.top-navigation-menu {
+    width: auto;
+}
+ul.navigation-menu-right {
+    display: inline;
+    margin-bottom: 0;
+}
+ul.navigation-menu-right li {
+    display: inline;
+    position: relative;
+    cursor: pointer;
+    height: 65px;
+    vertical-align: middle;
+    border-bottom: 5px transparent solid;
+}
+#login-btn {
+    display: inline-block;
+    text-align: center;
+    float: right;
+    padding: 20px 3%;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 5%;
+    border-left: 1px solid #a9a9a9;
+}
+#loginButton {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+#login-btn:hover {
+    border-bottom: 3px solid red;
+    transition: all ease-in-out .3s;
+}
+.main-menu {
+    display: block;
+    width: 100%;
+    padding-bottom: 0.5%;
+    border-top: 1px solid #a9a9a9;
+    border-bottom: 1px solid #a9a9a9;
+}
+ul.main-menu a {
+    padding-left: 7.6%;
+    padding-right: 7.6%;
+    text-align: center;
+    padding-bottom: 0.25%;
+}
+ul.main-menu li {
+    border-left: 1px solid #a9a9a9;
+}
+ul.main-menu a:hover {
+    border-bottom: 3px solid red;
+    transition: all ease-in-out .3s;
+}
+.recent-updates-container {
+    display: inline-block;
+    width: 47%;
+    margin-left: 1.7%;
+    border: 1px solid #a9a9a9;
+    border-radius: 20px;
+    margin-top: 3%;
+    vertical-align: top;
+}
+.trending-container {
+    display: inline-block;
+    width: 47%;
+    margin-left: 1.5%;
+    margin-top: 3%;
+    margin-right: 1.7%;
+    border: 1px solid #a9a9a9;
+    border-radius: 20px;
+    vertical-align: top;
+}
+#noSearchMessage {
+    margin-left: 33%;
+}
+.author-books-container .book-container {
+    width: 49%;
+    padding: 1% 1%;
+    margin-top: 0.9%;
+    margin-left: 0.5%;
+    border: 2px lightgrey solid;
+}
+.author-books-container .book-container:hover {
+    border: 2px red solid;
+}
+.author-books-container .book-container a {
+    text-decoration: none;
+    color: black;
+}
+.recent-updates-container h3, .trending-container h3 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 16px;
+}
+.updated-books-container {
+    width: 100%;
+    border-top: 1px solid #a9a9a9;
+    display: inline;
+}
+.updated-books-container img {
+    display: inline-block;
+    width: 90px;
+    height: 105px;
+}
+.updated-book-container .book-title-container h4, .trending-book-container .book-title-container h4 {
+    display: inline-block;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.book-title-container a {
+    text-decoration: none;
+    color: black;
+}
+.book-title-container a:hover {
+    color: red;
+}
+.updated-book-container .chapter-container  p, .trending-book-container .reviews-container p {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.recent-updates-container li, .trending-container li {
+    display: inline-block;
+    width: 100%;
+    list-style: none;
+}
+.recent-updates-container ul, .trending-container ul {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.cover-container {
+    display: inline-block;
+    overflow: hidden;
+    width: 15%;
+}
+.book-title-container {
+    display:inline-block;
+    position: absolute;
+   /* margin-left: 1.5%;*/
+    overflow: hidden;
+    text-align: center;
+}
+.chapter-container {
+    display: inline-block;
+    /*margin-left: 3.3%;*/
+    overflow: hidden;
+    margin-bottom: 3%;
+}
+.chapter-container a {
+    text-decoration: none;
+    color: #000;
+}
+.chapter-container a:hover {
+    color: red;
+}
+.slideshow {
+    display: block;
+    margin-top: 3%;
+    margin-left: 9.5%;
+    width : 100%;
+    height: 385px;
+}
+.slide {
+    display: none;
+}
+.slide img {
+    height: 350px;
+    border-radius: 5%;
+}
+.prev-slide, .next-slide {
+    width: auto;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.4s ease;
+    border-radius: 1%;
+    font-size: 18px;
+    color: black;
+}
+.prev-slide {
+    left: 80px;
+}
+.next-slide {
+    right: 93px;
+    border-radius: 1%;
+}
+.page-number {
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+}
+.clickable-dot {
+    display: inline-block;
+    height: 13px;
+    width: 15px;
+    margin: 0 2px;
+    cursor: pointer;
+    background-color: #BBBBBB;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+.active, .clickable-dot:hover {
+    background-color: #333333;
+}
+.fade {
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+@-webkit-keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+.reviews-container {
+    display: inline;
+    margin-left: 3.3%;
+    overflow: hidden;
+}
+.dots {
+    margin-bottom: 70px;
+    padding-bottom: 1%;
+    text-align: center;
+}
+#loginPopUp .modal-title {
+    font-size: 30px;
+    border-bottom: 3px #000 solid;
+    width: 75%;
+    margin: 10px auto 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+#loginPopUp .modal-body {
+    width: 50%;
+    margin: 0 auto;
+}
+#loginPopUp input {
+    padding: 14px 20px;
+    width: 100%;
+    margin: 15px auto;
+    display: block;
+    border: 1px #ccc solid;
+    font-size: 18px;
+}
+#loginPopUp input.forgot-password-btn, #loginPopUp input.send, #submitUserRegistrationDetails, .search-button input.send {
+    padding: 15px 10px;
+    text-align: center;
+    border: 5px #a9a9a9 solid;
+    border-radius: 15%;
+    width: 37%;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 38px 0 0;
+}
+.search-button input.send {
+    margin-left: 28.5%;
+}
+#loginPopUp input.forgot-password-btn:hover, #loginPopUp input.send:hover, .search-button input.send:hover {
+    border: 5px solid red;
+    transition: all ease-in-out .3s;
+}
+.registration-nickname, .registration-email, .registration-password, .registration-confirm-password {
+    padding-bottom: 10px;
+    display: table;
+    width: 100%;
+}
+.registration-nickname *, .registration-email *, .registration-password *, .registration-confirm-password * {
+    display: table-cell;
+}
+.registration-nickname input, .registration-email input, .registration-password input, .registration-confirm-password input {
+    text-align: center;
+}
+#submitUserRegistrationDetails {
+    display: block;
+    margin: 0 auto;
+}
+.author {
+    display: inline-block;
+  /*  position: absolute;
+    margin-left: 22%; */
+    overflow-x: auto;
+}
+.book-title {
+    display: block;
+    text-align: center;
+}
+.book-title h4 {
+    font-size: 24px;
+    margin-left: 20px;
+}
+.author-container {
+    display: block;
+    text-align: center;
+    overflow-x: auto;
+    font-size: 18px;
+}
+.large-cover-container {
+    display: inline-block;
+}
+.large-cover-container img {
+    max-width: 500px;
+    height: 250px;
+    margin-left: 12px;
+    border-radius: 7%;
+    float: left;
+}
+.genre-container {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 17px;
+}
+.genre {
+    font-weight: 300;
+    background: lightgrey;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+.genre:hover {
+    background: #6593F5;
+}
+.blurb-container {
+    display: inline-block;
+    width: 75%;
+    margin: 0 12.5%;
+    margin-top: 1.5%;
+    border-top: 1px lightgrey solid;
+    border-radius: 6%;
+}
+.rating-container {
+    display: inline-block;
+    float: right;
+}
+.rating {
+    cursor: pointer;
+}
+.lightgrey {
+    color: #BBBBBB;
+}
+.yellow {
+    color: yellow;
+}
+.book-page-chapter-container {
+    display: block;
+   /* text-align: center;*/
+    border: 3px lightgrey solid;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 8%;
+    padding-bottom: 1%;
+}
+.book-page-chapter-container a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.book-page-chapter-container a:hover {
+    color: red;
+}
+.single-chapter-container {
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.chapter-title-container {
+    width: 70%;
+    display: inline-block;
+    float: left;
+    padding-left: 20px;
+    padding-top: 6px;
+}
+.chapter-date-container {
+    display: inline-block;
+    width: 30%;
+    text-align: end;
+    padding-right: 20px;
+    padding-top: 6px;
+}
+.chapter-view-title-container {
+    display: block;
+    width: 100vw;
+}
+.chapter-cover-container {
+    display: inline-block;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+.chapter-cover-container img {
+    width: 190px;
+    height: 175px;
+}
+.book-title {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3%;
+}
+.book-title h5 {
+    font-size: 14px;
+}
+.book-title a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+.chapter-rating-container {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 0.55%;
+    margin-left: 0.3%;
+}
+#bookTitle:hover {
+    color: red;
+}
+.chapter-description-container {
+    display: block;
+}
+.chapter-view-title {
+    display: inline-block;
+    margin-left: 210px;
+}
+.chapter-view-title h3 {
+    font-size: 30px;
+}
+.read-chapter-container {
+    width: 60%;
+    margin: 0 auto;
+}
+.next-chapter-button {
+    display: inline-block;
+    margin-left: 3%;
+    margin-top: 1.5%;
+}
+.next-chapter-button a, .previous-chapter-button a {
+    text-decoration: none;
+    color: black;
+}
+.next-chapter-button button, .previous-chapter-button button {
+    padding: 10px 10px;
+    background: #92dff3;
+    border-radius: 25%;
+    border: none;
+    outline: none;
+}
+.next-chapter-button button:hover, .previous-chapter-button button:hover {
+    background: #ffcccb;
+}
+.previous-chapter-button {
+    display: inline-block;
+    float: right;
+    margin-top: 1.5%;
+    margin-right: 6%;
+}
+.inner-review-container {
+    display: block;
+    width: 51%;
+    margin: 0 22.5%;
+}
+.review-button {
+    display: block;
+    margin: 0 auto;
+    border: 5px #a9a9a9 solid;
+    border-radius: 15%;
+    width: 37%;
+    font-size: 18px;
+    margin-top: 1%;
+}
+.review-button:hover, .review-title-container button:hover, .submit-review-btn:hover {
+    border: 3px solid red;
+    transition: all ease-in-out .3s;
+}
+.inner-review-container h3 {
+    text-align: center;
+}
+.inner-book-reviews-container {
+    display: block;
+    width: 51%;
+    margin: 0 auto;
+    border-top: 1px solid lightgrey;
+    margin-top: 1%;
+}
+.review-title-container {
+    text-align: center;
+}
+.review-title-container button {
+    float: right;
+    border: 5px #a9a9a9 solid;
+    border-radius: 15%;
+}
+.review-title-answer input, .review-description-answer textarea {
+    width: 100%;
+}
+.avatar {
+    float: left;
+}
+.author-review-container {
+    text-align: center;
+}
+.author-review-container span {
+    margin-left: 11%;
+}
+.review-date-container {
+    float: right;
+}
+.submit-review-btn {
+    border: 5px #a9a9a9 solid;
+    border-radius: 15%;
+}
+.main-menu.navigation-menu-right a {
+    text-decoration: none;
+    color: black;
+}
+.dropdown {
+    display: inline-block;
+    padding-left: 7.6%;
+    padding-right: 7.6%;
+    text-align: center;
+    padding-bottom: 0.25%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5% 5%;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.book-container {
+    display: inline-block;
+}
+.cover-container-novels {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+.cover-image {
+    display: block;
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.overlay-image {
+    height: 100%;
+    display: block;
+    position: absolute;
+    width: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: lightgrey;
+    color: darkslategray;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50%;
+}
+.cover-container-novels:hover .overlay-image {
+    opacity: 1;
+}
+.book-title-container-novels {
+    text-align: center;
+}
+.filter-container {
+    display: none;
+    width: 0px;
+    margin-left: 5%;
+    margin-top: 1%;
+    background: white;
+    position: absolute;
+}
+.filter-title {
+    display: inline-block;
+    width: 90%;
+}
+.drop-filter-container {
+    font-size: 275%;
+    position: fixed;
+    top: 130px;
+    color: black;
+    padding: 16px;
+    z-index: 8;
+}
+.filter-genre-container-writing, .filter-exclude-genre-container-writing {
+    display: block;
+    text-align: center;
+    border-top: 1px solid lightgrey;
+    border-radius: 10%;
+}
+.filter-genre-container {
+    display: block;
+}
+.filter-genre-container ul, .filter-exclude-genre-container ul {
+    list-style: none;
+}
+.filter-genre-container ul li, .filter-exclude-genre-container ul li {
+    width: 49%;
+    display: inline-block;
+}
+.keyword-container input, .total-chapters-container-writing {
+    text-align: center;
+}
+.total-chapters-container ul {
+    list-style-type: none;
+}
+.total-chapters-container ul li {
+    width: 49%;
+    display: inline-block;
+}
+.total-chapters-container-writing {
+    margin-top: 4%;
+    border-top: 1px solid lightgrey;
+    border-radius: 10%;
+}
+.keyword-container {
+    border-top: 1px solid lightgrey;
+    border-radius: 6%;
+}
+.keyword-container input, .keyword-container i {
+    margin-top: 4%;
+}
+.keyword-container input {
+    margin-left: 9%;
+}
+.search-container, .list-container {
+    margin-top: 1.5%;
+}
+.result-container, .best-rated-container {
+    width: 85%;
+    display: none;
+    margin: 0 auto;
+    margin-top: 5%;
+    border: 1px lightgrey solid;
+    border-radius: 4%;
+}
+.best-rated-container {
+    display: block;
+}
+.book-cover-container {
+    display: inline-block;
+    width: 20%;
+}
+.book-cover-container img {
+    width: 200px;
+    height: 250px;
+}
+.book-detail-container {
+    display: block;
+    width: 80%;
+    float: right;
+}
+.book-title-result-container {
+    text-align: center;
+}
+.book-blurb-container {
+    display: none;
+}
+.height {
+    height: auto;
+}
+.total-rating-container {
+    margin-top: 1%;
+}
+.collapse-button {
+    display: none;
+}
+.expand-button, .collapse-button {
+    cursor: pointer;
+    margin-top: 1.5%;
+    margin-left: 2.5%;
+}
+#closeFilterBtn {
+    display: none;
+}
+.book-page-btn {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.book-page-btn:hover {
+    text-decoration: underline;
+    color: red;
+}
+.book-genre-container a {
+    cursor: pointer;
+}
+.rated-cover-details {
+    width: 19%;
+    margin-left: 1%;
+}
+.member-table {
+    display: table;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 1em;
+    border-bottom: 1px lightgrey solid;
+    margin-top: 2%;
+}
+.member-table thead th {
+    text-align: center;
+    padding: 30px 90px;
+    border-bottom: 1px lightgrey solid;
+}
+.member-table tbody tr {
+    display: table-row;
+    border-bottom: 1px lightgrey solid;
+}
+.member-table tbody tr td {
+    text-align: center;
+    padding: 2% 4%;
+}
+.member-row-template a {
+    text-decoration: none;
+    color: black;
+}
+.member-row-template a:hover {
+    color: red;
+}
+.profile-photo-container {
+    display: block;
+    background: aliceblue;
+    margin-top: 0.4%;
+    padding: 30px;
+}
+.profile-photo-container img {
+    margin-left: 46%;
+    height: 200px;
+}
+.nickname-container h3 {
+    text-align: center;
+}
+.author-fictions-title-container h3 {
+    text-align: center;
+}
+.profile-detail-container {
+    width: 95%;
+    margin: 0 auto;
+}
+.commenter-details-container .nickname-container {
+    display: inline;
+    margin-left: 15%;
+}
+.commenter-details-container .date-posted-comment {
+    display: inline;
+    float: right;
+    margin-right: 15%;
+}
+.individual-comment-container .comment-contents-container {
+    margin-top: 1%;
+    margin-left: 15%;
+}
+.individual-comment-container {
+    margin: 0 auto;
+    margin-top: 1%;
+    width: 90%;
+    border-bottom: 1px solid darkslategrey;
+}
+.pagination .page-number-container a {
+    padding: 10px 15px;
+    /*background: transparent;*/
+    border: #bccfd8 1px solid;
+    border-left: 0px;
+    cursor: pointer;
+    color: #607d8b;
+}
+.current-page {
+    background: #bccfd8;
+}
+.inactive-link {
+   pointer-events: none;
+   cursor: default;
+   background: lightgrey;
+}
+.pagination {
+    margin-left: 5%;
+}
+.forum-post {
+    width: 70%;
+    margin: 0 auto;
+}
+.forum-post .forum-post-title {
+    padding: 15px 20px 20px;
+}
+.forum-post .forum-post-comment {
+    position: relative;
+}
+.forum-post-comment .forum-post-author {
+    display: table-cell;
+    position: relative;
+    width: fit-content;
+}
+.forum-post-comment .forum-post-author .forum-post-author-profile {
+    padding: 18px 18px 0 0;
+}
+.forum-post-comment .forum-post-author .forum-post-author-profile .profile-photo {
+    display: block;
+    width: fit-content;
+}
+.forum-post-comment .forum-post-author .forum-post-author-profile .profile-photo img {
+    width: 150px;
+    height: 110px;
+}
+.forum-post-comment .forum-post-author .forum-post-author-profile .forum-post-author-name {
+    margin-left: 30px;
+}
+.forum-post-comment .forum-post-body {
+    display: table-cell;
+    width: 80%;
+}
+.forum-post-comment .forum-post-body p {
+    margin: 10px 35px 10px;
+}
+.forum-post-contents, .post_date {
+    position: relative;
+    top: -40px;
+}
+.profile-contact ul {
+    margin-left: -40px;
+}
+.forum-post-author-name {
+    text-decoration:none;
+    color:black;
+}
+.forum-post-author-name:hover {
+    color:red;
+}
